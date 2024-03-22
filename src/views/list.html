@@ -1,0 +1,16 @@
+<!-- 双大括号是区分末班代码和html的分割符，括号里面可以是要显示输出的数据，或是控制语句 -->
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>List</title>
+    </head>
+    <body>
+    <ol>
+        <!-- 在模板中声明变量语法$obj := {{.}} -->
+        {{range $.images}}<li><a href="/view?id={{.|urlquery}}">{{.|html}}</a></li>
+        {{end}}
+    </o1>
+    </body>
+</html>
+
