@@ -29,6 +29,7 @@ source ~/.bash_profile
 ## 图片上传项目
 基于Golang，实现图片上传、查看功能的服务器
 ## 演示
+进入src目录，运行：go run photoweb.go
 1. 访问：localhost:8080/upload,出现上传表单
 ![img](./imgs/upload.png)
 
